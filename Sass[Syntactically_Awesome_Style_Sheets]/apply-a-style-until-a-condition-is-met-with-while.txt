@@ -1,0 +1,17 @@
+<style type='text/scss'>
+$index: 1;
+$font-size: 15;
+@while $index <= 5 {
+  .text-#{$index}{
+    font-size: $font-size * $index + px;
+  }
+  $index: $index+1;
+}
+
+</style>
+
+<p class="text-1">Hello</p>
+<p class="text-2">Hello</p>
+<p class="text-3">Hello</p>
+<p class="text-4">Hello</p>
+<p class="text-5">Hello</p>
